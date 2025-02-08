@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@100;300;400;700&display=swap");
+
+.display-4 {
+  font-family: "Chakra Petch", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.display-4 .text {
+  color: rgb(3, 103, 179);
+  position: relative;
+}
+
+.display-4 .text.first-text {
+  color: black;
+}
+
+.text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+  border-left: 2px solid rgb(3, 103, 179);
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: aliceblue;
+}
+
+#projects {
+  background-color: aliceblue;
+}
+
+.video1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.video2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.video3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+section {
+  padding-top: 6rem;
+}
